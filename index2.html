@@ -1,0 +1,432 @@
+<html>
+<head>
+    <title>Data Orangtua Calon Siswa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo-muhammadiyah.png" alt="Logo SMK Muhammadiyah">
+            <div class="header-text">
+                <h1>PENERIMAAN PESERTA DIDIK BARU (PPDB)</h1>
+                <p>SMK MUHAMMADIYAH 1 PALU</p>
+                <p>TAHUN AJARAN 2025-2026</p>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Data Penerimaan Calon Siswa</h2>
+            <div class="form-group">
+                <label for="departemen">Departemen:</label>
+                <select id="departemen">
+                    <option value="SMK">SMK</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="penerimaan">Penerimaan:</label>
+                <select id="penerimaan">
+                    <option value="PSB SMK MUHIPA 2025">PSB SMK MUHIPA 2025</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="kelompok">Kelompok:</label>
+                <select id="kelompok">
+                    <option value="AKUNTANSI KEUANGAN LEMBAGA, kapasitas: 36, terisi: 0">AKUNTANSI KEUANGAN LEMBAGA, kapasitas: 36, terisi: 0</option>
+                </select>
+            </div>
+    
+            <h2>Data Pribadi Calon Siswa</h2>
+            <div class="form-group">
+                <label for="nisn">N I S N:</label>
+                <input type="text" id="nisn">
+            </div>
+            <div class="form-group">
+                <label for="nik">N I K:</label>
+                <input type="text" id="nik">
+            </div>
+            <div class="form-group">
+                <label for="no-un">No UN Sebelumnya:</label>
+                <input type="text" id="no-un">
+            </div>
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama">
+            </div>
+            <div class="form-group">
+                <label for="panggilan">Panggilan:</label>
+                <input type="text" id="panggilan">
+            </div>
+            <div class="form-group form-inline">
+                <label>Jenis Kelamin:</label>
+                <div class="radio-group">
+                    <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-laki">
+                    <label for="laki-laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="tempat-lahir">Tempat Lahir:</label>
+                <input type="text" id="tempat-lahir">
+            </div>
+            <div class="form-group form-inline">
+                <label for="tanggal-lahir">Tanggal Lahir:</label>
+                <select id="tahun-lahir">
+                    <option value="2024">2024</option>
+                </select>
+                <select id="bulan-lahir">
+                    <option value="Desember">Desember</option>
+                </select>
+                <select id="hari-lahir">
+                    <option value="13">13</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="agama">Agama:</label>
+                <select id="agama">
+                    <option value="ISLAM">ISLAM</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="suku">Suku:</label>
+                <input type="text" id="suku">
+            </div>
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <select id="status">
+                    <option value="REGULER">REGULER</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="kondisi">Kondisi:</label>
+                <select id="kondisi">
+                    <option value="CUKUP">CUKUP</option>
+                </select>
+            </div>
+            <div class="form-group form-inline">
+                <label>Kewarganegaraan:</label>
+                <div class="radio-group">
+                    <input type="radio" id="wni" name="kewarganegaraan" value="WNI">
+                    <label for="wni">WNI</label>
+                    <input type="radio" id="wna" name="kewarganegaraan" value="WNA">
+                    <label for="wna">WNA</label>
+                </div>
+            </div>
+            <div class="form-group form-inline">
+                <label>Anak ke:</label>
+                <input type="number" id="anak-ke" style="width: 50px;">
+                <label>dari</label>
+                <input type="number" id="jumlah-saudara" style="width: 50px;">
+                <label>bersaudara</label>
+            </div>
+            <div class="form-group">
+                <label for="status-anak">Status Anak:</label>
+                <select id="status-anak">
+                    <option value="Anak Kandung">Anak Kandung</option>
+                </select>
+            </div>
+            <div class="form-group form-inline">
+                <label for="jumlah-saudara-kandung">Jumlah Saudara Kandung:</label>
+                <input type="number" id="jumlah-saudara-kandung" style="width: 50px;">
+                <label>orang</label>
+            </div>
+            <div class="form-group form-inline">
+                <label for="jumlah-saudara-tiri">Jumlah Saudara Tiri:</label>
+                <input type="number" id="jumlah-saudara-tiri" style="width: 50px;">
+                <label>orang</label>
+            </div>
+            <div class="form-group">
+                <label for="bahasa">Bahasa:</label>
+                <input type="text" id="bahasa">
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat:</label>
+                <input type="text" id="alamat">
+            </div>
+            <div class="form-group form-inline">
+                <label for="kode-pos">Kode Pos:</label>
+                <input type="text" id="kode-pos" style="width: 100px;">
+            </div>
+            <div class="form-group form-inline">
+                <label for="jarak-sekolah">Jarak ke Sekolah:</label>
+                <input type="text" id="jarak-sekolah" style="width: 100px;">
+                <label>km</label>
+            </div>
+            <div class="form-group">
+                <label for="telpon">Telpon:</label>
+                <input type="text" id="telpon">
+            </div>
+            <div class="form-group">
+                <label for="handphone">Handphone:</label>
+                <input type="text" id="handphone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </div>
+    
+            <h2>Data Sekolah Calon Siswa</h2>
+            <div class="form-group">
+                <label for="asal-sekolah">Asal Sekolah:</label>
+                <select id="asal-sekolah">
+                    <option value="TK / RA">TK / RA</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="no-ijazah">No Ijazah:</label>
+                <input type="text" id="no-ijazah">
+            </div>
+            <div class="form-group">
+                <label for="tgl-ijazah">Tgl Ijazah:</label>
+                <input type="text" id="tgl-ijazah">
+            </div>
+            <div class="form-group">
+                <label for="keterangan">Keterangan:</label>
+                <input type="text" id="keterangan">
+            </div>
+    
+            <h2>Riwayat Kesehatan Calon Siswa</h2>
+            <div class="form-group form-inline">
+                <label>Golongan Darah:</label>
+                <div class="radio-group">
+                    <input type="radio" id="gol-a" name="golongan-darah" value="A">
+                    <label for="gol-a">A</label>
+                    <input type="radio" id="gol-ab" name="golongan-darah" value="AB">
+                    <label for="gol-ab">AB</label>
+                    <input type="radio" id="gol-b" name="golongan-darah" value="B">
+                    <label for="gol-b">B</label>
+                    <input type="radio" id="gol-o" name="golongan-darah" value="O">
+                    <label for="gol-o">O</label>
+                    <input type="radio" id="gol-belum" name="golongan-darah" value="belum ada data">
+                    <label for="gol-belum">(belum ada data)</label>
+                </div>
+            </div>
+            <div class="form-group form-inline">
+                <label for="berat">Berat:</label>
+                <input type="text" id="berat" style="width: 100px;">
+                <label>kg</label>
+            </div>
+            <div class="form-group form-inline">
+                <label for="tinggi">Tinggi:</label>
+                <input type="text" id="tinggi" style="width: 100px;">
+                <label>cm</label>
+            </div>
+            <div class="form-group">
+                <label for="riwayat-penyakit">Riwayat Penyakit:</label>
+                <input type="text" id="riwayat-penyakit">
+            </div>
+        </div>
+        <h2>Data Orangtua Calon Siswa</h2>
+        <div class="form-section">
+            <h3>Ayah</h3>
+            <div class="form-group">
+                <label for="ayah-nama">Nama:</label>
+                <input type="text" id="ayah-nama" name="ayah-nama">
+            </div>
+            <div class="form-group checkbox-label">
+                <input type="checkbox" id="ayah-almarhum" name="ayah-almarhum">
+                <label for="ayah-almarhum">(Almarhum)</label>
+            </div>
+            <div class="form-group">
+                <label for="ayah-status">Status Orangtua:</label>
+                <select id="ayah-status" name="ayah-status">
+                    <option>Ortu Kandung</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ayah-tempat-lahir">Tempat Lahir:</label>
+                <input type="text" id="ayah-tempat-lahir" name="ayah-tempat-lahir">
+            </div>
+            <div class="form-group">
+                <label for="ayah-tanggal-lahir">Tanggal Lahir:</label>
+                <div class="form-group half-width">
+                    <select id="ayah-tahun-lahir" name="ayah-tahun-lahir">
+                        <option>2024</option>
+                    </select>
+                </div>
+                <div class="form-group half-width">
+                    <select id="ayah-bulan-lahir" name="ayah-bulan-lahir">
+                        <option>Desember</option>
+                    </select>
+                </div>
+                <div class="form-group half-width">
+                    <select id="ayah-hari-lahir" name="ayah-hari-lahir">
+                        <option>13</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ayah-pendidikan">Pendidikan:</label>
+                <select id="ayah-pendidikan" name="ayah-pendidikan">
+                    <option>BELUM TAMAT SD</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ayah-pekerjaan">Pekerjaan:</label>
+                <select id="ayah-pekerjaan" name="ayah-pekerjaan">
+                    <option>ANGGOTA DPRD</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ayah-penghasilan">Penghasilan:</label>
+                <input type="text" id="ayah-penghasilan" name="ayah-penghasilan">
+            </div>
+            <div class="form-group">
+                <label for="ayah-email">Email:</label>
+                <input type="email" id="ayah-email" name="ayah-email">
+            </div>
+            <div class="form-group">
+                <label for="ayah-nama-wali">Nama Wali:</label>
+                <input type="text" id="ayah-nama-wali" name="ayah-nama-wali">
+            </div>
+            <div class="form-group">
+                <label for="ayah-alamat">Alamat Orangtua:</label>
+                <input type="text" id="ayah-alamat" name="ayah-alamat">
+            </div>
+            <div class="form-group">
+                <label for="ayah-telepon">Telepon:</label>
+                <input type="text" id="ayah-telepon" name="ayah-telepon">
+            </div>
+            <div class="form-group">
+                <label for="ayah-hp1">HP Ortu #1:</label>
+                <input type="text" id="ayah-hp1" name="ayah-hp1">
+            </div>
+            <div class="form-group">
+                <label for="ayah-hp2">HP Ortu #2:</label>
+                <input type="text" id="ayah-hp2" name="ayah-hp2">
+            </div>
+            <div class="form-group">
+                <label for="ayah-hp3">HP Ortu #3:</label>
+                <input type="text" id="ayah-hp3" name="ayah-hp3">
+            </div>
+        </div>
+        <div class="form-section">
+            <h3>Ibu</h3>
+            <div class="form-group">
+                <label for="ibu-nama">Nama:</label>
+                <input type="text" id="ibu-nama" name="ibu-nama">
+            </div>
+            <div class="form-group checkbox-label">
+                <input type="checkbox" id="ibu-almarhumah" name="ibu-almarhumah">
+                <label for="ibu-almarhumah">(Almarhumah)</label>
+            </div>
+            <div class="form-group">
+                <label for="ibu-status">Status Orangtua:</label>
+                <select id="ibu-status" name="ibu-status">
+                    <option>Ortu Kandung</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ibu-tempat-lahir">Tempat Lahir:</label>
+                <input type="text" id="ibu-tempat-lahir" name="ibu-tempat-lahir">
+            </div>
+            <div class="form-group">
+                <label for="ibu-tanggal-lahir">Tanggal Lahir:</label>
+                <div class="form-group half-width">
+                    <select id="ibu-tahun-lahir" name="ibu-tahun-lahir">
+                        <option>2024</option>
+                    </select>
+                </div>
+                <div class="form-group half-width">
+                    <select id="ibu-bulan-lahir" name="ibu-bulan-lahir">
+                        <option>Desember</option>
+                    </select>
+                </div>
+                <div class="form-group half-width">
+                    <select id="ibu-hari-lahir" name="ibu-hari-lahir">
+                        <option>13</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ibu-pendidikan">Pendidikan:</label>
+                <select id="ibu-pendidikan" name="ibu-pendidikan">
+                    <option>BELUM TAMAT SD</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ibu-pekerjaan">Pekerjaan:</label>
+                <select id="ibu-pekerjaan" name="ibu-pekerjaan">
+                    <option>ANGGOTA DPRD</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ibu-penghasilan">Penghasilan:</label>
+                <input type="text" id="ibu-penghasilan" name="ibu-penghasilan">
+            </div>
+            <div class="form-group">
+                <label for="ibu-email">Email:</label>
+                <input type="email" id="ibu-email" name="ibu-email">
+            </div>
+            <div class="form-group">
+                <label for="ibu-nama-wali">Nama Wali:</label>
+                <input type="text" id="ibu-nama-wali" name="ibu-nama-wali">
+            </div>
+            <div class="form-group">
+                <label for="ibu-alamat">Alamat Orangtua:</label>
+                <input type="text" id="ibu-alamat" name="ibu-alamat">
+            </div>
+            <div class="form-group">
+                <label for="ibu-telepon">Telepon:</label>
+                <input type="text" id="ibu-telepon" name="ibu-telepon">
+            </div>
+            <div class="form-group">
+                <label for="ibu-hp1">HP Ortu #1:</label>
+                <input type="text" id="ibu-hp1" name="ibu-hp1">
+            </div>
+            <div class="form-group">
+                <label for="ibu-hp2">HP Ortu #2:</label>
+                <input type="text" id="ibu-hp2" name="ibu-hp2">
+            </div>
+            <div class="form-group">
+                <label for="ibu-hp3">HP Ortu #3:</label>
+                <input type="text" id="ibu-hp3" name="ibu-hp3">
+            </div>
+        </div>
+        <div class="form-section">
+            <h2>Informasi Tambahan</h2>
+            <div class="form-group">
+                <label for="hobi">Hobi:</label>
+                <input type="text" id="hobi" name="hobi">
+            </div>
+            <div class="form-group">
+                <label for="alamat-surat">Alamat Surat:</label>
+                <input type="text" id="alamat-surat" name="alamat-surat">
+            </div>
+            <div class="form-group">
+                <label for="keterangan">Keterangan:</label>
+                <input type="text" id="keterangan" name="keterangan">
+            </div>
+        </div>
+        <div class="form-section">
+            <h2>Data Tambahan</h2>
+            <div class="form-group">
+                <label for="nik-ayah">NIK AYAH:</label>
+                <input type="text" id="nik-ayah" name="nik-ayah">
+            </div>
+            <div class="form-group">
+                <label for="nik-ibu">NIK IBU:</label>
+                <input type="text" id="nik-ibu" name="nik-ibu">
+            </div>
+            <div class="form-group">
+                <label for="akta-lahir">No AKTA LAHIR:</label>
+                <input type="text" id="akta-lahir" name="akta-lahir">
+            </div>
+            <div class="form-group">
+                <label for="pindahan-dari">PINDAHAN DARI:</label>
+                <input type="text" id="pindahan-dari" name="pindahan-dari">
+            </div>
+            <div class="form-group">
+                <label for="tanggal-masuk">TANGGAL MASUK:</label>
+                <input type="text" id="tanggal-masuk" name="tanggal-masuk">
+            </div>
+            <div class="form-group">
+                <label for="kartu-keluarga">NO KARTU KELUARGA:</label>
+                <input type="text" id="kartu-keluarga" name="kartu-keluarga">
+            </div>
+        </div>
+        <button type="submit" class="submit-btn">Submit Formulir</button>
+    </div>
+</body>
+</html>
